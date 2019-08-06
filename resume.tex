@@ -1,0 +1,76 @@
+\documentclass[11pt,letterpaper,roman]{moderncv}
+\usepackage[scale=0.8,margin=0.4in]{geometry}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\name{Elliot}{Wasem}
+\title{Software Engineer}
+\address{28 Entwistle Ave}{Nutley, NJ 07110}
+\phone[mobile]{1-609-498-2128}
+\email{elliotbielwasem@gmail.com}
+\homepage{elliot-wasem.github.io/personal-website}
+\social[linkedin]{elliot-wasem}
+\social[github]{elliot-wasem}
+
+\begin{document}
+
+\makecvtitle
+
+\sethintscolumntowidth{mmm yyyy - mmm yyyy}
+
+\section{Education}
+\cventry{2017 -- 2020}{B.S. Computer Science}{Stevens Institute of Technology}{Hoboken, NJ}{}{
+    \textit{GPA -- 3.49}
+    \begin{itemize}
+        \item TA for CS 590 Algorithms, CS 511 Concurrent Programming, CS 442 Database Management Systems, CS 146 Intro to Web Development
+        \item Member of Upsilon Pi Epsilon: International Honor Society for the Computing and Information Disciplines
+    \end{itemize}
+}
+
+\section{Experience}
+\cventry{April 2018 -- Current}{Software Engineer}{\href{https://dexteritydb.com}{DexterityDB}}{Hoboken, NJ}{}{
+    \begin{itemize}
+        \item Developed various parts of database storage engine, with most work done on a virtual filesystem.
+        \item Designed and built continuous integration tools such as automated build servers, benchmark servers, and various automation scripts to streamline daily workflow.
+        \item Implemented testing scripts to speed up the generation of data as our product was further developed.
+        \item Served as the company's Linux expert and server administrator.
+    \end{itemize}
+}
+\cventry{September 2015 -- November 2016}{Wireless Team Lead}{\href{https://www.marketsource.com/}{MarketSource, Target Mobile}}{Princeton, NJ}{}{
+    \begin{itemize}
+        \item Managed new and existing accounts for Verizon Wireless, AT\&T, Sprint, and Comcast XFinity.
+        \item Maintained relations with Target management to ensure effective sales flow, fraud prevention, and organization.
+        \item Organized and maintained Target Mobile's inventory and assets.
+    \end{itemize}
+}
+
+\section{Projects}
+\cventry{Personal}{Personal Password Manager}{}{}{}{
+  \begin{itemize}
+      \item Password manager implemented in Rust.
+      \item Uses \href{https://github.com/davatorium/rofi}{Rofi} as a graphical user interface.
+      \item Allows locally storing passwords in a secure manner, all locked behind a master password.
+      \item The beauty of this password manager is that, even with in-depth knowledge of how it works, it is impossible to read the password file without knowing the master password.
+  \end{itemize}
+}
+\cventry{Personal}{Personal Website}{https://elliot-wasem.github.io/personal-website}{}{}{
+    \begin{itemize}
+        \item My personal website tries to let the user experience the computer the way I do on a daily basis: through the commandline.
+        \item Implemented in ``vanilla'' JavaScript, it provides a handful of custom-implemented commands to let the user browse my credentials in a terminal fashion.
+    \end{itemize}
+}
+\cventry{Academic}{TinyChat, Teaching Assistant, CS511}{}{}{}{
+    \begin{itemize}
+        \item Designed and setup groundwork for assignment for students in the Fall 2019 semester.
+        \item Assignment was to create an IRC chat application, implemented completely in Erlang.
+    \end{itemize}
+}
+
+\section{Skills}
+\cvitem{\textbf{Languages}}{C/C++, Python, Erlang, Java, Rust, Bash, JavaScript}
+\cvitem{\textbf{Web \& Cloud}}{HTML5, CSS, MySQL, Kubernetes, GCloud}
+\cvitem{\textbf{Misc. Tech}}{Git, Linux, Trello, ZenHub, Emacs, \LaTeX{}}
+
+
+\end{document}
