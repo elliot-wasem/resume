@@ -1,12 +1,12 @@
-\documentclass[11pt,letterpaper,roman]{moderncv}
-\usepackage[scale=0.8,margin=0.4in]{geometry}
+\documentclass[10pt,letterpaper,roman]{moderncv}
+\usepackage[scale=0.8,margin=0.3in]{geometry}
 
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 
 \name{Elliot}{Wasem}
 \title{Software Engineer}
-\address{28 Entwistle Ave}{Nutley, NJ 07110}
+\address{Nutley, NJ, USA}
 \phone[mobile]{1-609-498-2128}
 \email{elliotbielwasem@gmail.com}
 \homepage{elliot-wasem.github.io/personal-website}
@@ -18,12 +18,11 @@
 \makecvtitle
 
 \sethintscolumntowidth{mmm yyyy - mmm yyyy}
-
 \section{Education}
 \cventry{2017 -- 2020}{B.S. Computer Science}{Stevens Institute of Technology}{Hoboken, NJ}{}{
     \textit{GPA -- 3.49}
     \begin{itemize}
-        \item TA for CS 590 Algorithms, CS 511 Concurrent Programming, CS 442 Database Management Systems, CS 146 Intro to Web Development
+        \item TA -- Algorithms, Concurrent Programming, Database Management Systems, Intro to Web Development
         \item Member of Upsilon Pi Epsilon: International Honor Society for the Computing and Information Disciplines
     \end{itemize}
 }
@@ -37,6 +36,12 @@
         \item Served as the company's Linux expert and server administrator.
     \end{itemize}
 }
+\cventry{September 2018 -- December 2018}{Undergraduate Research Assistant}{Stevens Institute of Technology}{Hoboken, NJ}{}{
+    \begin{itemize}
+        \item Explored the possibility of extending eBPF from the network interfaces down to storage mediums.
+        \item Setup and maintained Ubuntu servers both for the head professor and for other researchers.
+    \end{itemize}
+}
 \cventry{September 2015 -- November 2016}{Wireless Team Lead}{\href{https://www.marketsource.com/}{MarketSource, Target Mobile}}{Princeton, NJ}{}{
     \begin{itemize}
         \item Managed new and existing accounts for Verizon Wireless, AT\&T, Sprint, and Comcast XFinity.
@@ -46,31 +51,39 @@
 }
 
 \section{Projects}
-\cventry{Personal}{Personal Password Manager}{}{}{}{
-  \begin{itemize}
-      \item Password manager implemented in Rust.
-      \item Uses \href{https://github.com/davatorium/rofi}{Rofi} as a graphical user interface.
-      \item Allows locally storing passwords in a secure manner, all locked behind a master password.
-      \item The beauty of this password manager is that, even with in-depth knowledge of how it works, it is impossible to read the password file without knowing the master password.
-  \end{itemize}
+\cventry{DexterityDB}{Virtual Filesystem}{Rust}{}{}{
+    \begin{itemize}
+        \item Designed and implemented a virtual filesystem implemented in Rust.
+        \item Ensured that it was the minimum needed to work with our database software so as to run lean and efficiently.
+        \item This project reduced the file descriptors we needed open from upwards of a million down to just a small handful.
+    \end{itemize}
 }
-\cventry{Personal}{Personal Website}{https://elliot-wasem.github.io/personal-website}{}{}{
+\cventry{Personal}{Personal Password Manager}{Rust}{}{}{
+    \begin{itemize}
+        \item Password manager implemented in Rust.
+        \item Uses \href{https://github.com/davatorium/rofi}{Rofi} as a graphical user interface.
+        \item Allows locally storing passwords in a secure manner, all locked behind a master password.
+        \item The beauty of this password manager is that, even with in-depth knowledge of how it works, it is impossible to read the password file without knowing the master password.
+    \end{itemize}
+}
+\cventry{Personal}{Personal Website}{HTML, CSS, JavaScript}{}{}{
     \begin{itemize}
         \item My personal website tries to let the user experience the computer the way I do on a daily basis: through the commandline.
         \item Implemented in ``vanilla'' JavaScript, it provides a handful of custom-implemented commands to let the user browse my credentials in a terminal fashion.
     \end{itemize}
 }
-\cventry{Academic}{TinyChat, Teaching Assistant, CS511}{}{}{}{
+\cventry{Academic, Teaching Assistant, CS511}{TinyChat}{Erlang}{}{}{
     \begin{itemize}
         \item Designed and setup groundwork for assignment for students in the Fall 2019 semester.
-        \item Assignment was to create an IRC chat application, implemented completely in Erlang.
+        \item Assignment is to create an IRC chat application, implemented completely in Erlang.
+        \item Purpose of assignment is to give students a full understanding of message passing.
+        \item The project is designed such that it would only take a few lines more of code to turn this into a fully distributed, centralized messaging application. However for the purpose of this assignment, it was designed so that processes were all locally running on a single computer.
     \end{itemize}
 }
 
 \section{Skills}
 \cvitem{\textbf{Languages}}{C/C++, Python, Erlang, Java, Rust, Bash, JavaScript}
 \cvitem{\textbf{Web \& Cloud}}{HTML5, CSS, MySQL, Docker, GCloud}
-\cvitem{\textbf{Misc. Tech}}{Git, Linux, Trello, ZenHub, Emacs, \LaTeX{}}
-
+\cvitem{\textbf{Misc. Tech}}{Git, Linux, Trello, Emacs, \LaTeX{}, VSCode}
 
 \end{document}
