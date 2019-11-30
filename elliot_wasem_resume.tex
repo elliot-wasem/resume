@@ -6,10 +6,9 @@
 \moderncvcolor{blue}
 
 \newcommand*{\mysection}[1]{%
-  \vspace{2.5ex}% \@plus 1ex \@minus .2ex}%
-  \phantomsection{}% reset the anchor for hyperrefs
+  \vspace{2.5ex}
+  \phantomsection{}
   \addcontentsline{toc}{part}{#1}%
-  % ... deleted
   \parbox[m]{\textwidth}{\sectionstyle{#1}}\\[1ex]}
 
 \name{Elliot}{Wasem}
@@ -27,9 +26,9 @@
 \vspace{-0.4in}
 \sethintscolumntowidth{\ }
 \mysection{Education}
-\textbf{Bachelors of Science, Computer Science}, Stevens Institute of Technology, \textit{Hoboken, NJ} \hfill 2017 -- 2020
+\textbf{Bachelors of Science, Computer Science}, Stevens Institute of Technology, \textit{Hoboken, NJ} \hfill May, 2020
 
-\textit{\textbf{GPA} -- 3.49}
+\textit{\textbf{GPA} -- 3.5}
 
 \begin{itemize}
   \item TA -- Algorithms, Concurrent Programming, Database Management Systems, Intro to Web Development
@@ -39,31 +38,32 @@
 \mysection{Skills}
 \textbf{Programming}:\space\space\space C, C++, Python, Erlang, Java, Rust, Bash, JavaScript\\
 \textbf{Web \& Cloud}:\space\space\space HTML5, CSS, MySQL, Docker, GCloud\\
-\textbf{Misc. Tech}:\space\space\space\space\space\space Git, Linux, Windows, Trello, Emacs, \LaTeX{}, VSCode
+\textbf{Misc. Tech}:\space\space\space\space\space\space UNIX, Git, Linux, Windows, Trello, Emacs, \LaTeX{}, VSCode
 
 
 \mysection{Experience}
-\textbf{Teaching Assistant, Stevens Institute of Technology} \textit{Hoboken, NJ} \hfill August 2018 -- Current
+\textbf{Software Engineer, \href{https://dexteritydb.com}{DexterityDB}}, \textit{Hoboken, NJ} \hfill Apr 2018 -- Current
+\begin{itemize}
+\item Used Rust programming language to develop database storage engine, with most work done on a virtual filesystem.
+\item Reduced memory footprint of program by eliminating unnecessary memory allocation and usage.
+\item Designed and created Linux server systems to run custom continuous integration tools written in Bash, Python, and R to provide on-demand binaries and running statistics as development progressed.
+\item Implemented testing scripts to accelerate generation of data as the product was developed, cutting need for manual generation.
+\item Handled DevOps tasks relating to our server system, providing expertise where others lacked in-depth understanding.
+\end{itemize}\space
+
+\hfill
+
+\textbf{Teaching Assistant, Stevens Institute of Technology} \textit{Hoboken, NJ} \hfill Aug 2018 -- Current
 \begin{itemize}
 \item Assistant for courses Algorithms, Concurrent Programming, Database Management Systems, Intro to Web Development
 \item Created new assignments for students to nurture an understanding of the material
-\item Assisted students gain an understanding for the topics taught in class
+\item Assisted students in gaining an understanding for the topics taught in class
 \item Graded students' understanding of the material on assignments and quizzes
 \end{itemize}
 
 \hfill
 
-\textbf{Software Engineer, \href{https://dexteritydb.com}{DexterityDB}}, \textit{Hoboken, NJ} \hfill April 2018 -- Current
-\begin{itemize}
-\item Developed various parts of database storage engine, with most work done on a virtual filesystem.
-\item Designed and built continuous integration tools such as automated build servers, benchmark servers, and various automation scripts to streamline daily workflow.
-\item Implemented testing scripts to speed up the generation of data as the product was further developed.
-\item Served as the company's Linux expert and server administrator.
-\end{itemize}\space
-
-\hfill
-
-\textbf{Undergraduate Research Assistant, Stevens Institute of Technology}, Hoboken, NJ \hfill September 2018 -- December 2018
+\textbf{Undergraduate Research Assistant, Stevens Institute of Technology}, \textit{Hoboken, NJ} \hfill Sep 2018 -- Dec 2018
 \begin{itemize}
 \item Explored the possibility of extending eBPF from the network interfaces down to storage mediums.
 \item Setup and maintained Ubuntu servers both for the head professor and for other researchers.
@@ -71,7 +71,7 @@
 
 \hfill
 
-\textbf{Wireless Team Lead, \href{https://www.marketsource.com/}{MarketSource, Target Mobile}} \textit{Princeton, NJ} \hfill September 2015 -- November 2016
+\textbf{Wireless Team Lead, \href{https://www.marketsource.com/}{MarketSource, Target Mobile}} \textit{Princeton, NJ} \hfill Sep 2015 -- Nov 2016
 \begin{itemize}
 \item Managed new and existing accounts for Verizon Wireless, AT\&T, Sprint, and Comcast XFinity.
 \item Maintained relations with Target management to ensure effective sales flow, fraud prevention, and organization.
@@ -79,37 +79,35 @@
 \end{itemize}
 
 \mysection{Projects}
-\textbf{Personal Website} \textit{Hoboken, NJ} (HTML, CSS, JavaScript) \hfill June 2019 -- Current
+\textbf{Secure Server Setup} (Linux Server) \hfill Jun 2019 -- Current
 \begin{itemize}
-  %        \item My personal website tries to let the user experience the computer the way I do on a daily basis: through the commandline.
-\item Implemented in ``vanilla'' JavaScript, it provides a handful of custom-implemented commands to let the user browse my credentials in a terminal fashion.
-\item Designed to be a unique experience that speaks to my strengths using computers
+\item Problem: Needed remote access to a piece of hardware, but client did not want the machine to be exposed to the outside world.
+\item Solution: Created an SSH server on a Linux system with limited access, and hardened it against outside attack, providing a secure method to connect to the client's hardware.
 \end{itemize}
 
 \hfill
 
-\textbf{TinyChat, Concurrent Programming, Stevens Institute of Tech}, \textit{Hoboken, NJ} (Erlang) \hfill June 2019 -- September 2019
+\textbf{TinyChat, Concurrent Programming, Stevens Institute of Tech}, \textit{Hoboken, NJ} (Erlang) \hfill Jun 2019 -- Sep 2019
 \begin{itemize}
 \item Designed and setup groundwork for assignment for students in the Fall 2019 semester.
 \item Assignment is to create an IRC chat application, implemented completely in Erlang.
 \item Purpose of assignment is to give students a full understanding of message passing.
-  %        \item The project is designed such that it would only take a few lines more of code to turn this into a fully distributed, centralized messaging application. However for the purpose of this assignment, it was designed so that processes were all locally running on a single computer.
 \end{itemize}
 
 \hfill
 
-\textbf{Personal Password Manager} \textit{Hoboken, NJ} (Rust) \hfill March 2019 -- July 2019
+\textbf{Personal Password Manager} \textit{Hoboken, NJ} (Rust) \hfill Mar 2019 -- Jul 2019
 \begin{itemize}
 \item Password manager implemented in Rust.
 \item Uses \href{https://github.com/davatorium/rofi}{Rofi} as a graphical user interface.
-\item Stored passwords locally in a secure manner, all locked behind a master password.
+\item Stores passwords locally in a mathematically secure manner, all locked behind a master password.
 \end{itemize}
 
 \hfill
 
-\textbf{Virtual Filesystem}, DexterityDB \textit{Hoboken, NJ} (Rust) \hfill May 2018 -- August 2018
+\textbf{Virtual Filesystem}, DexterityDB \textit{Hoboken, NJ} (Rust) \hfill May 2018 -- Aug 2018
 \begin{itemize}
-\item Designed and implemented a virtual filesystem implemented in Rust.
+\item Designed and implemented a virtual filesystem in Rust.
 \item Ensured that it was the minimum needed to work with the database software so as to run lean and efficiently.
 \item Reduced the file descriptors needed open from upwards of a million down to just a small handful.
 \end{itemize}
