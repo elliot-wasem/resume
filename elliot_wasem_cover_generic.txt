@@ -1,0 +1,16 @@
+Hello,
+
+I am a software engineer who graduated from Stevens Institute of Technology with a Bachelor's of Science in Computer Science in May 2020. I am seeking employment beginning in mid to late August of 2020.
+
+As a software developer, I take a strong stance in favor of stability, scalability, and efficiency over quick implementation, and it shows in my code. I am very strong in low-level development, and my in-depth knowledge of UNIX and UNIX-like (BSD, Linux, Solaris, etc.) systems and how their kernels work allows me to take advantage of stability and performance optimizations that otherwise may be overlooked. I have experience writing enterprise-level software, and feel comfortable with creating scalable solutions that is just as efficient running in a single node as communicating across distributed systems.
+
+I have taken a course in systems administration which has allowed me to learn enormous amounts about AWS, and has exposed me to many of the issues and decisions surrounding managing servers, users, and software, as well as many of the best practices therein.
+
+That is not to say that I am naive enough to think I know everything. I regularly come across new topics for which I have no prior expertise off which to work. This means that I am constantly learning and growing, and feel very comfortable learning on the job, and considering many different plans of attack before moving forward with a solution.
+
+I look forward to hearing more from you, and answering any further questions you may have.
+
+Regards,
+
+Elliot Wasem
+
